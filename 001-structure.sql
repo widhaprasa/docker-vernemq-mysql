@@ -1,4 +1,8 @@
+-- Create database first
 CREATE DATABASE vmq_mysql;
+
+-- Use database
+USE DATABASE vmq_mysql;
 
 -- Create default table
 CREATE TABLE vmq_auth_acl
