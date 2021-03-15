@@ -1,4 +1,4 @@
-FROM mysql:5.7.5
+FROM mysql:5.7.33
 
 # Add default mysql env 
 ENV MYSQL_DATABASE=vmq_mysql
