@@ -1,5 +1,5 @@
 -- Use database
-USE DATABASE vmq_mysql;
+USE vmq_mysql;
 
 -- Create default table
 CREATE TABLE vmq_auth_acl
@@ -11,7 +11,7 @@ CREATE TABLE vmq_auth_acl
   publish_acl TEXT,
   subscribe_acl TEXT,
   PRIMARY KEY (username)
-)
+);
 
 -- Add index for mountpoint and group
 ALTER TABLE `vmq_auth_acl` INDEX `idx_mountpoint` ON (`mountpoint`);
