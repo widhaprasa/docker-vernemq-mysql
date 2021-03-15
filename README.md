@@ -1,2 +1,1 @@
-"# vernemq-mysql" 
-"# vernemq-mysql" 
+"# vernemq-mysql"
