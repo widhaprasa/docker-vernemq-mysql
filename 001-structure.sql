@@ -14,5 +14,5 @@ CREATE TABLE vmq_auth_acl
 );
 
 -- Add index for mountpoint and group
-ALTER TABLE `vmq_auth_acl` INDEX `idx_mountpoint` ON (`mountpoint`);
-ALTER TABLE `vmq_auth_acl` INDEX `idx_group` ON (`group_`);
+CREATE INDEX idx_mountpoint ON vmq_auth_acl (`mountpoint`);
+CREATE INDEX idx_group ON vmq_auth_acl (`group_`);
