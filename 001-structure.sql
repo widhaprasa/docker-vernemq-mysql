@@ -1,6 +1,9 @@
 -- Use database
 USE vmq_mysql;
 
+-- Grant all privileges
+GRANT ALL PRIVILEGES ON vmq_mysql.* TO 'vmq_mysql'@'%'
+
 -- Create default table
 CREATE TABLE vmq_auth_acl
 (
