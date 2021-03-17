@@ -1,5 +1,5 @@
 -- Grant all privileges
-GRANT ALL PRIVILEGES ON vmq_mysql.* TO 'vmq_mysql'@'%'
+GRANT ALL PRIVILEGES ON vmq_mysql.* TO 'vmq_mysql'@'%';
 
 -- Use database
 USE vmq_mysql;
