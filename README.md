@@ -1,1 +1,1 @@
-"# vernemq-mysql"
+"# docker-vernemq-mysql"
