@@ -13,9 +13,8 @@ CREATE TABLE vmq_auth_acl
   password VARCHAR(128),
   publish_acl TEXT,
   subscribe_acl TEXT,
-  PRIMARY KEY (username)
+  PRIMARY KEY (mountpoint, username)
 );
 
--- Add index for mountpoint and group
-CREATE INDEX idx_mountpoint ON vmq_auth_acl (`mountpoint`);
-CREATE INDEX idx_group ON vmq_auth_acl (`group_`);
+-- Add index for group
+CREATE INDEX idx_group ON vmq_auth_acl (`mountpoint`, `group_`);
